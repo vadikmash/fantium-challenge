@@ -45,10 +45,9 @@ export const Card: FC<CardProps> = ({
   isMintable,
   isLoading,
 }) => {
-  console.log(isLoading);
   return (
     <div className="grid w-80 place-items-center transition-transform duration-100 hover:scale-[1.03]">
-      <div className="bg-card-background pt-2 pb-8 shadow-card">
+      <div className="bg-card-background pb-8 pt-2 shadow-card">
         <Image
           alt="Collection card image"
           src={imageData}
@@ -56,10 +55,10 @@ export const Card: FC<CardProps> = ({
           height={427}
           className="mx-2 shadow-card"
         />
-        <div className="mt-8 mb-0.5 px-8 text-xs capitalize leading-[18px] text-white">
+        <div className="mb-0.5 mt-8 px-8 text-xs capitalize leading-[18px] text-white">
           {category}
         </div>
-        <div className="flex items-baseline justify-between border-b border-white border-opacity-10 pl-8 pr-[29px] pb-[18px]">
+        <div className="flex items-baseline justify-between border-b border-white border-opacity-10 pb-[18px] pl-8 pr-[29px]">
           <strong className="text-[28px] font-normal leading-[32px] text-white">
             {!isLoading ? (
               getSharePercentage(tournamentEarningShare1e7 ?? 0n)
@@ -78,7 +77,7 @@ export const Card: FC<CardProps> = ({
             <Skeleton width={70} />
           )}
         </div>
-        <ul className="mt-[15px] h-[61px] pr-[26px] pl-[60px]">
+        <ul className="mt-[15px] h-[61px] pl-[60px] pr-[26px]">
           {features.map(({ emoji, content }, index) => (
             <li key={`${index}`} className="relative text-sm text-white">
               <div className="absolute -left-4 -top-[1px] -translate-x-full text-[9.5px]">
