@@ -1,11 +1,11 @@
 import { type FC } from "react";
-import Image, { type StaticImageData } from "next/image";
+import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
 interface CardProps {
-  imageData: StaticImageData;
+  imageSrc: string;
   category: "bronze" | "silver" | "gold";
   features: ReadonlyArray<{ emoji: string; content: string }>;
   isLoading: boolean;
@@ -36,7 +36,7 @@ const getInvocations = (invocations: bigint) => {
 };
 
 export const Card: FC<CardProps> = ({
-  imageData,
+  imageSrc,
   category,
   tournamentEarningShare1e7,
   features,
@@ -50,7 +50,11 @@ export const Card: FC<CardProps> = ({
       <div className="bg-card-background pb-8 pt-2 shadow-card">
         <Image
           alt="Collection card image"
-          src={imageData}
+          src={imageSrc}
+          loading="lazy"
+          loader={({ src }) =>
+            `https://storage.googleapis.com/fantium-image-storage/${src}`
+          }
           width={304}
           height={427}
           className="mx-2 shadow-card"

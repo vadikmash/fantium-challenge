@@ -3,9 +3,6 @@ import Head from "next/head";
 
 import { api } from "~/utils/api";
 
-import BronzeImage from "./assets/bronze.png";
-import SilverImage from "./assets/silver.png";
-import GoldImage from "./assets/gold.png";
 import RightArrow from "./assets/right-arrow.svg";
 import { Card } from "../../components/Card";
 
@@ -33,7 +30,7 @@ const Home: NextPage = () => {
         <div>
           <div className="flex flex-col gap-6 lg:flex-row lg:gap-4 xl:gap-[39px]">
             <Card
-              imageData={BronzeImage}
+              imageSrc="bronze.png"
               category="bronze"
               features={[
                 {
@@ -48,7 +45,7 @@ const Home: NextPage = () => {
               isMintable={bronzeCard?.isMintable}
             />
             <Card
-              imageData={SilverImage}
+              imageSrc="silver.png"
               category="silver"
               features={[
                 {
@@ -68,7 +65,7 @@ const Home: NextPage = () => {
               isMintable={silverCard?.isMintable}
             />
             <Card
-              imageData={GoldImage}
+              imageSrc="gold.png"
               category="gold"
               features={[
                 {
