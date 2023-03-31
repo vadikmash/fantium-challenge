@@ -29,9 +29,9 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <main className="mx-auto flex min-h-screen flex-col items-center justify-center bg-main-background p-8">
+      <main className="flex min-h-screen flex-col items-center justify-center bg-main-background py-6 lg:p-2 2xl:p-4">
         <div>
-          <div className="flex flex-wrap gap-[39px]">
+          <div className="flex flex-col gap-6 lg:flex-row lg:gap-4 xl:gap-[39px]">
             <Card
               imageData={BronzeImage}
               category="bronze"
