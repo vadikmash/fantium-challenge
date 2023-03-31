@@ -27,7 +27,7 @@ const Home: NextPage = () => {
           name="description"
           content="Fantium Coding Challenge for Full Stack Engineers"
         />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="images/favicon.png" />
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center bg-main-background py-6 lg:p-2 2xl:p-4">
         <div>
