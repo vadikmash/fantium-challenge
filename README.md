@@ -1,28 +1,14 @@
-# Create T3 App
+# Fantium Challenge
+
+A challenge from Fantium for Full Stack developers.
 
 This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
 
-## What's next? How do I make an app with this?
+# TODO
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
-
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
-
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
-
-## Learn More
-
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
-
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
-
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
-
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+- [ ] Improve layout responsiveness for 13-inch laptop screens. Currently the page doesn't completely fit on smaller laptop screens and the user needs to scroll to see the the bottom of it, which is not desirable behavior in this case.
+- [ ] Design and implement expanded version of the collection card, that would display all the info, that currently doesn't fit in the card.
+- [ ] Improve project structure:
+  - move logic from routers to dedicated services
+  - switch to atomic design for frontend components
+- [ ] Add a proper favicon, what would scale well and work with all browsers (`.ico` version, `.svg` version, various resolutions, webmanifest, etc.). Use this [generator](https://realfavicongenerator.net/) for help.
